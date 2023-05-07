@@ -1,0 +1,385 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,1000;1,500;1,1000&display=swap');
+
+
+
+/*-------------------RESET--------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+/*-------------------HEADER--------------------*/
+.flex {
+    background-color: #900F0F;
+    position: sticky;
+    z-index: 2;
+    top: 0  ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.flex nav{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.flex nav ul{
+    display: flex;
+}
+
+.flex img{
+    width: 150px;
+    height: 150px;
+}
+
+
+.flex nav ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+    color: white;
+    font-style:italic;
+    font: weight 500 ;
+    font-family: 'Nunito', sans-serif; 
+    list-style: none;
+    text-decoration: none; 
+}
+
+
+
+
+
+
+
+
+/*-------------------MAIN--------------------*/
+
+/*...........CSS EN INDEX.......*/
+.hero {
+    background-image: url(../img/cafe-mano.jpg);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    font-style: italic;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2{
+    margin: 25px;
+    padding: 10px;
+    font-size: 65px;
+    color: white;
+    border:  white solid 2px;
+}
+
+.hero p{
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: white;
+
+}
+
+
+.hero a{
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+.bienvenidos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bienvenidos h2{
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.bienvenidos p{
+    font-size: 25px;
+    margin: 25px;
+}
+
+.productos h2{
+    background-color: #900F0F;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.productos-contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.productos-card{
+    width: 270px ;
+    height: 360px ;
+    border: 1px black solid;
+    object-fit: cover;
+    -webkit-box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
+-moz-box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
+box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
+}
+
+.productos div img {
+    width: 100%;
+    height: 250px;
+}
+
+.productos div h3{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.productos div a{
+    background-color: black;
+    color: beige;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row;
+    margin: 40px;  
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.imagen div img{
+    width: 400px;
+    height: 500px;
+    border: black solid 1px;
+    border-radius: 10px;
+}
+
+.imagen div h3{
+    position: absolute;
+    width: 400px;
+    color: white;
+    top:  15px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.521);
+    margin-top: 25px;
+    font-size: 40px;
+}
+
+.imagen p{
+    height: 300px;
+    margin: 40px;
+    padding: 25px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.fixed {
+    position: fixed;
+    right: 45px ;
+    bottom: 100px;
+}
+
+/*.........CSS EN CONTACTO........*/
+
+.contacto {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*..........CSS EN GALERIA.........*/
+
+.grid-galeria {
+    width: 96%;
+    margin: 35px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 200px ;
+    gap: 20px;
+
+}
+
+.grid-item:hover{
+    transform: scale(1.1);
+}
+
+.grid-titulo{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.grid-titulo h2{
+    font-size: 40px;
+}
+
+.grid-titulo p{
+    font-size: 20px;
+    color: white;
+    background-color: #900F0F;
+}
+
+.grid-galeria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 5px;
+    background-color: #900F0F;
+    -webkit-box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
+-moz-box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
+box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
+}
+
+.item1{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item2{
+    grid-row: span 2;
+}
+
+.item8{
+    grid-row: span 2;
+}
+.item12{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item11{
+    grid-row: span 2;
+}
+
+/*.............CSS EN ELABORACION.........*/
+
+.grid-contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+}
+
+.grid-contenedor img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+}
+
+
+
+
+/*-------------------FOOTER--------------------*/
+
+/*...........CSS EN PIE DE PAGINA..........*/
+
+.pie-de-pagina{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #900F0F;
+    flex-wrap: wrap;
+}
+
+.pie-de-pagina ul{
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Nunito', sans-serif ;
+}
+
+.pie-de-pagina ul li a{
+    font-family: 'Nunito', sans-serif ;
+    font-size: 18px;
+    color: white;
+}
+
+.pie-de-pagina p{
+    color: white;
+    font-size: 18px;
+    margin: 15px;
+    text-align: center;
+}
+
+.pie-de-pagina div{
+    padding: 5px;
+}
+
+
+/*--------------------MEDIA QUERIES-----------------*/
+
+/*.......MEDIA QUERIES EN HEADER.......*/
+
+@media screen and (max-width:923px) {
+    .flex{
+        display: block;
+        text-align: center;
+    }
+}
+
+/*.....MEDIA QUEREIS EN MAIN.........*/
+
+@media screen and(max-width:400px) {
+    .grid-galeria{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*......MEDIA QUERIES EN FOOTER........*/
+
+@media screen and (max-width:840px){
+    .pie-de-pagina{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px, 35px, 1fr;
+        grid-area: 
+        "ul"
+        "p"
+        "diV";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    }
