@@ -1,75 +1,240 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Cafe de especialidad</title>
 </head>
-<body>
-    <header class="flex">
-        <nav>
-            <!--lista numero 1-->
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./tienda.html">Tienda</a></li>
-                <li><a href="./elaboracion.html">Elaboración</a></li>
-            </ul>
-        </nav>
-            <a href="../index.html">
-                <img src="../img/logo-cafe.jpeg" alt="logo-de-pagina" class="logo-cafe">
-            </a>
-            <!--lista numero 2-->
-        <nav>
-            <ul>
-                <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./carta.html">Carta</a></li>
-            </ul>
-        </nav>
 
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo-cafe.jpeg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./elaboracion.html">Elaboración</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./tienda.html">Tienda</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="buscar" placeholder="Search" aria-label="buscar">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
+
     <main>
-        <h2>Guia de elaboracion</h2>
-        <section>
-        <div class="grid-contenedor">
-            <div class="espresso">
-                <img src="../img/expreso.jpg" alt="Cafetera-espresso">
-                <h3>Espresso</h3>
-                <p>El santo grial, el Monte Everest, el nirvana del café: lograr la perfección del espresso es el objetivo de todo verdadero devoto del café. En verdad, es probable que sea inalcanzable, y ahí radica la diversión; El siguiente espresso que hagas siempre será mejor.</p>
+        <div class="guia-elaboración">
+                <h1>Guia de elaboracion</h1>
+            <div class="enmarcado">
+                <img src="../img/cafetera-de-goteo.jpg" alt="cafetera-de-goteo">
+                <h3>Cafetera de goteo</h3>
+                <p>Hacer café con una cafetera automática de goteo es una de las maneras más fáciles de preparar una
+                taza de café.</p>
             </div>
-            <div class="v-60">
-                <img src="../img/v60.jpg" alt="cafetera-v60">
-                <h3>V-60</h3>
-                <p>El clásico. Una de las mejores y más sencillas maneras de obtener el café en casa, con excelentes resultados</p>
+            <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Cafetera de goteo
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Preparación</strong> .Moler el café a un tamaño de partícula medio-fino. Coloca el filtro de café en la cesta del filtro. Todas las cafeteras de goteo automáticas tienen una cesta de filtro que generalmente está justo debajo del cabezal de preparación (donde sale el agua caliente). Agrega una cucharada de café a un filtro de papel por cada taza (6 oz) de café que desee preparar. Si desea un café más rico y con más cuerpo, use un filtro permanente. Agrega agua fría y filtrada al depósito. Usa 6 onzas de agua por cada taza de café que desee hacer. Presiona el botón de inicio para comenzar el ciclo de preparación de la cafetera. La mayoría de las cafeteras de goteo automáticas tendrán un simple botón o interruptor de «inicio».
+                    </div>
+                </div>
             </div>
-            <div class="chemex">
-                <img src="../img/chemex.jpg" alt="cafetera-chemex">
-                <h3>chemex</h3>
-                <p>Inventado en 1941 y aún fabricado con el mismo diseño de madera, vidrio y cuero.</p>
+            <div class="enmarcado">
+                <img src="../img/prensa-francesa.jpg" alt="cafetera-prensa-francesa">
+                <h3>Prensa Francesa</h3>
+                <p>la prensa francesa puede proporcionar una gran taza de café. Su talón de Aquiles es propenso a la
+                    extracción excesiva, por lo que se recomienda transferir la olla completa a una jarra una vez
+                    que se presiona, o asegurarse de usar solo una prensa de tamaño único.</p>
             </div>
-            <div class="moka">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Prensa Francesa
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Preparación:</strong>1.Hervir aproximadamente 600 gr de agua para una prensa de 2 tazas.
+
+                        2. Muele 64 gr de café en trozos grandes y luego vierta aproximadamente 250 gr de agua para que florezca. Dale un suave revuelo y espera 30 segundos.
+                        
+                        3. Vierte el resto del agua y deje reposar el café durante exactamente cuatro minutos.
+                        
+                        4. Presiona el café con firmeza (debería dar una resistencia de aproximadamente 15 a 20 libras; demasiado y su molienda fue demasiado fina; muy poco y fue demasiado áspera).
+                        
+                        ¡Vierte inmediatamente, y disfruta de tu café!
+                    </div>
+                </div>
+            </div>
+            <div class="enmarcado">
                 <img src="../img/moka.jpg" alt="cafetera-moka">
                 <h3>Moka</h3>
                 <p>Un clásico de la estufa europea, la pequeña y atractiva olla Moka está regresando con los puristas del café.</p>
             </div>
-            <div class="prensa-francesa">
-                <img src="../img/prensa-francesa.jpg" alt="cafetera-prensa-francesa">
-                <h3>Prensa Francesa</h3>
-                <p>la prensa francesa puede proporcionar una gran taza de café. Su talón de Aquiles es propenso a la extracción excesiva, por lo que se recomienda transferir la olla completa a una jarra una vez que se presiona, o asegurarse de usar solo una prensa de tamaño único.</p>
-            </div>
-            <div class="cafetera-goteo">
-                <img src="../img/cafetera-de-goteo.jpg" alt="cafetera-de-goteo">
-                <h3>Cafetera de goteo</h3>
-                <p>Hacer café con una cafetera automática de goteo es una de las maneras más fáciles de preparar una taza de café.</p>
-            </div>
-            <div class="aeroespres">
-                <img src="../img/aeroexpres.jpg" alt="cafetera-aeroespres">
-                <h3>Aero Espress</h3>
-                <p>Un dispositivo innovador inventado en 2005, el Aeropress combina la impregnación con el hundimiento forzado utilizando presión de aire. Coffe@rabica recomienda usar el método “invertido”, que se describe aquí.</p>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        moka
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Preparación:</strong>
+                        1. Moler 20 gr de café fino
+
+2. Desenrosca la olla Moka y llena la olla inferior con agua que esté recién preparada.
+
+3. Coloca el portafiltro en la parte superior de la olla inferior y agrega café. Tócala para asentar la cama.
+
+4. Pasa el dedo por el café para distribuirlo uniformemente, de izquierda a derecha y luego de adelante hacia atrás.
+
+5. Tornillo en la cámara superior. Usa una toalla para sostener el fondo, ya que ahora estará caliente.
+
+6. Pon la estufa a fuego medio. Con el calor correcto, la presión debe forzar una corriente de agua constante a través del café hacia la cámara superior. Demasiado poco calor resultará en una acción letárgica; si es frenético baja el calor. Cuando termines, escucharás un gorgoteo y un silbido cuando el agua se acabe.
+
+7. Vierte con cuidado (el asa a menudo está caliente debido al tamaño pequeño de la olla Moka) y disfruta de tu café
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="enmarcado">
+            <img src="../img/chemex.jpg" alt="cafetera-chemex">
+            <h3>Chemex</h3>
+            <p>Inventado en 1941 y aún fabricado con el mismo diseño de madera, vidrio y cuero.</p>
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        chemex
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Preparación</strong>1. Llevar a hervir 520 gr de agua. (Bueno para 2 tazas de café)
+
+                        2. Pesa 64 gr de café y moler grueso.
+                        
+                        3. Despliega el filtro y cárgalo en el Chemex. Nos gusta alinear los pliegues con el pico.
+                        
+                        4. Usa un poco del exceso de agua para remojar previamente el filtro y calentar el vaso del Chemex. Asegúrate de descargar el agua antes de verter el café en el filtro.
+                        
+                        5. Vierte el café molido en el Chemex, tratando de obtener la “cama” del café lo más pareja posible (golpea y agite si es necesario).
+                        
+                        6. Comenzando en el centro de la cama, comienza a verter aproximadamente 100 gr de agua por minuto en la cama de café, trabajando hacia afuera. Trata de evitar verter directamente a los lados.
+                        
+                        7. Espera 30 segundos para que el café florezca o se expanda. Esto maximiza el área de superficie y asegura una distribución uniforme del agua.
+                        
+                        8. Ahora vierte agua directamente en el centro de los terrenos, vertiendo lenta y cuidadosamente. Nuestro objetivo es tomar cuatro minutos para el vertido completo.
+                    </div>
+                </div>
+            </div>
+            <div class="enmarcado">
+                <img src="../img/v60.jpg" alt="cafetera-v60">
+                <h3>V-60</h3>
+                <p>El clásico. Una de las mejores y más sencillas maneras de obtener el café en casa, con excelentes
+                    resultados.</p>
+            </div>
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        v-60
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Preparación.</strong>1. Deja hervir el doble de agua que necesitará (alrededor de 500 gr)
+
+                        2. Pesa 32 gr de granos de café y muele hasta obtener una tosquedad que recuerda a la sal marina.
+                        
+                        3. Pon el papel de filtro en su gotero, vierte la mitad del agua caliente en el filtro para asegurar la saturación y calentar los recipientes. Desecha después de un minuto más o menos. Deja que el agua restante en el hervidor se enfríe a aproximadamente 200 ° F.
+                        
+                        4. Vierte el café en el filtro y toca o agite para nivelar. Vierte 50-60 g de agua comenzando en el centro haciendo ejercicio y evitando verter los lados.
+                        
+                        5. Deja florecer durante 30 segundos.
+                        
+                        6. Continúa vertiendo lentamente (70-85 gr a la vez) durante unos 4 minutos, hasta que la escala indique 260 gr.
+                        
+                        ¡Quita la v-60 de la taza y disfruta de tu café!
+                    </div>
+                </div>
+            </div>
+            <div class="enmarcado">
+                <img src="../img/expreso.jpg" alt="Cafetera-espresso">
+                <h3>espresso</h3>
+                <p>El santo grial, el Monte Everest, el nirvana del café: lograr la perfección del espresso es el
+                    objetivo de todo verdadero devoto del café. En verdad, es probable que sea inalcanzable, y ahí
+                    radica la diversión; El siguiente espresso que hagas siempre será mejor.</p>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Espresso
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Preparación</strong> It is hidden by default, until the
+                        1. Retira el portafiltro de la cabeza de grupo de la máquina de café exprés y colócalo en una escala tarada.
+
+2. Purga la cabeza del grupo con agua para asegurarte de que esté completamente limpia y clara.
+
+3. Moler 18-22 gr de café en la cesta.
+
+4. Ajusta su molienda a polvo fino.
+
+5. Pasa el dedo por el café para distribuirlo uniformemente, de izquierda a derecha y luego de adelante hacia atrás.
+
+6. Manipula el café con la manipulación del portafiltro sobre una superficie limpia y plana. No demasiado duro, solo lo suficiente para sellar el café uniformemente. Luego gira el tamper para alisar los suelos. Esto ayuda a la extracción.
+
+7. Coloca el portafiltro en el encabezado del grupo y comienza a tirar el disparo. Comenzará con un goteo lento que se convertirá en una corriente uniforme. Aproximadamente a los 30 segundos, la extracción comenzará a llegar a su fin y la transmisión se volverá «rubia» o se volverá amarilla. Detén el disparo en este punto.
+
+¡Contempla la belleza de lo que acabas de crear y disfruta de tu café!
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="fixed">
             <a href=""><img src="../img/whatsapp.png" alt="logo-whatsapp"></a>
         </div>
@@ -88,6 +253,11 @@
             <img src="../img/gorjeo.png" alt="logo-twitter">
         </div>
     </footer>
-    
+    <!--BOOTSTRAP JS-->>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>

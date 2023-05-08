@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Cafes de especialidad</title>
 </head>
+
 <body>
-    <header class="flex">
-        <nav>
-            <!--lista numero 1-->
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/tienda.html">Tienda</a></li>
-                <li><a href="./pages/elaboracion.html">Elaboración</a></li>
-            </ul>
-        </nav>
-            <a href="./index.html">
-                <img src="./img/logo-cafe.jpeg" alt="logo-de-pagina" class="logo-cafe">
-            </a>
-        <nav>
-            <!--lista numero 2-->
-            <ul>
-                <li><a href="./pages/galeria.html">Galeria</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/carta.html">Carta</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./img/logo-cafe.jpeg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../proyecto-coder/pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../proyecto-coder/pages/elaboracion.html">Elaboración</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../proyecto-coder/pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../proyecto-coder/pages/tienda.html">Tienda</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="buscar" placeholder="Search" aria-label="buscar">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -40,18 +56,20 @@
             <img src="" alt="">
             <h2>Bienvenidos a Coffe@rabica</h2>
             <p>
-                En Coffe@rabica nos aseguramos de seleccionar los granos de café de especialidad de la más alta calidad para que puedas disfrutar de una taza de café excepcional.
-Además, ofrecemos una amplia variedad de sabores y perfiles de tostado para que puedas encontrar el café de especialidad que mejor se adapte a tus gustos.
+                En Coffe@rabica nos aseguramos de seleccionar los granos de café de especialidad de la más alta calidad
+                para que puedas disfrutar de una taza de café excepcional.
+                Además, ofrecemos una amplia variedad de sabores y perfiles de tostado para que puedas encontrar el café
+                de especialidad que mejor se adapte a tus gustos.
             </p>
         </section>
         <section class="productos">
-            <h2>Productos Destacados</h2> 
-            <div class="productos-contenedor"> 
+            <h2>Productos Destacados</h2>
+            <div class="productos-contenedor">
                 <div class="productos-card">
                     <img src="./img/cafeconleche.jpg" alt="foto-taza-cafe-con-leche">
                     <h3>Cafe con leche</h3>
                     <a href="">INFO</a>
-                </div> 
+                </div>
                 <div class="productos-card">
                     <img src="./img/ristretto1.jpg" alt="foto-taza-cafe-expreso">
                     <h3>Ristretto</h3>
@@ -66,17 +84,19 @@ Además, ofrecemos una amplia variedad de sabores y perfiles de tostado para que
                     <img src="./img/capuc.jpg" alt="foto-taza-capuccino">
                     <h3>Capuccino</h3>
                     <a href="">INFO</a>
+                </div>
             </div>
-            </div>       
         </section>
         <section class="imagen">
             <div>
                 <img src="./img/persona-sirviendo-taza-cafe.jpg" alt="foto-persona-sirviendo-cafe">
                 <h3>¿Que es el cafe de especialidad?</h3>
             </div>
-            <p>Cuando se habla de café de especialidad, se hacer referencia al café de una calidad extraordinaria por su cuidadosa selección de granos de café. Para recibir esta denominación, el café ha tenido que obtener 80 o más puntos en una categoría que llega hasta los 100 puntos.</p>
+            <p>Cuando se habla de café de especialidad, se hacer referencia al café de una calidad extraordinaria por su
+                cuidadosa selección de granos de café. Para recibir esta denominación, el café ha tenido que obtener 80
+                o más puntos en una categoría que llega hasta los 100 puntos.</p>
         </section>
-            
+
         <div class="fixed">
             <a href=""><img src="./img/whatsapp.png" alt="logo-whatsapp"></a>
         </div>
@@ -94,5 +114,10 @@ Además, ofrecemos una amplia variedad de sabores y perfiles de tostado para que
             <img src="./img/gorjeo.png" alt="logo-twitter">
         </div>
     </footer>
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
