@@ -352,6 +352,26 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
     padding: 5px;
 }
 
+.tienda h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 15px;
+    background-color: #900F0F;
+    color: white;
+
+}
+
+.carrusel-item{
+    width: 70%;
+    height: 50%;
+}
+
+.d-none{
+    background-color: #900F0F;
+}
+
+
 
 /*--------------------MEDIA QUERIES-----------------*/
 
