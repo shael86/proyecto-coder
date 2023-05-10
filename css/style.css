@@ -197,14 +197,59 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
 
 /*.........CSS EN CONTACTO........*/
 
-.contacto {
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-    font-style: italic;
-    font-size: 25px;
+.contacto{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.contacto img{
+    width: 700px;
+    height: 400px;
+    border-radius: 5px;
+    border: black solid 2px;
+    margin-bottom: 10px;
+}
+
+.horarios h2{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    background-color: #900F0F;
+    margin-top: 15px;
+    border: black solid 2px;
+    border-radius: 5px;
+}
+.horarios p{
+    text-align: center;
+    color: white;
+    background-color: #900F0F;
+    border: black solid 2px;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.ubicacion{
+    color: white;
+    background-color: #900F0F;
+    margin: 15px;
+    padding: 25px;
+    border:  black solid 2px;
+    border-radius: 5px;
+    width: 450px;
+}
+
+
+.contactanos{
+    color: white;
+    background-color: #900F0F;
+    border:  black solid 2px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+
 
 /*..........CSS EN GALERIA.........*/
 
@@ -219,9 +264,9 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
 
 }
 
-/*.grid-item:hover{
+.grid-item:hover{
     transform: scale(1.1);
-}*/
+}
 
 .grid-titulo{
     text-align: center;
