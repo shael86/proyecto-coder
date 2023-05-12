@@ -25,7 +25,7 @@ a {
     background-color: #900F0F;
 }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav{
     color: white;
     font-size: 23px;
     font-family: 'Nunito', sans-serif;
@@ -38,20 +38,11 @@ a {
     width: 200px;
 }
 
-.navbar-light .navbar-toggler{
-    color: grey;
-    border: white 2px solid;
-}
-
-
-
-
-
-
 
 /*-------------------MAIN--------------------*/
 
 /*...........CSS EN INDEX.......*/
+/*
 .hero {
     background-image: url(../img/cafe-mano.jpg);
     width: 100%;
@@ -193,7 +184,7 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
     position: fixed;
     right: 45px ;
     bottom: 100px;
-}
+} */
 
 /*.........CSS EN CONTACTO........*/
 
@@ -366,7 +357,7 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
 
 /*...........CSS EN PIE DE PAGINA..........*/
 
-.pie-de-pagina{
+/*.pie-de-pagina{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -395,7 +386,7 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
 
 .pie-de-pagina div{
     padding: 5px;
-}
+}*/
 
 .tienda h2{
     text-align: center;

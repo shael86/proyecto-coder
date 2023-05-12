@@ -1,0 +1,28 @@
+.pie-de-pagina{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #900F0F;
+    flex-wrap: wrap;
+    ul{
+        margin: 5px;
+        padding: 5px;
+        font-family: 'Nunito', sans-serif ;
+        li{
+            a{
+                font-family: 'Nunito', sans-serif ;
+                font-size: 18px;
+                color: white;
+            }
+        }
+    }
+    p{
+        color: white;
+        font-size: 18px;
+        margin: 15px;
+        text-align: center;
+    }
+    div{
+        padding: 5px;
+    }
+}
