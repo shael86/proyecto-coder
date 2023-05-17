@@ -1,0 +1,18 @@
+/*------ scss en header------*/
+
+.navbar{
+    background-color: #900F0F;
+    .container-fluid{
+        .nav-link.active{
+            color: white;
+            font-size: 23px;
+            font-family: 'Nunito', sans-serif;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        img{
+        height: 200px;
+        width: 200px;
+        }
+    }
+}

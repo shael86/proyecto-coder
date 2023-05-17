@@ -4,7 +4,7 @@
 
 
 /*-------------------RESET--------------------*/
-*{
+/*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,7 +21,7 @@ a {
 
 /*-------------------HEADER--------------------*/
 
-.navbar{
+/*.navbar{
     background-color: #900F0F;
 }
 
@@ -188,7 +188,7 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
 
 /*.........CSS EN CONTACTO........*/
 
-.contacto{
+/*.contacto{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -239,12 +239,12 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
     border-radius: 5px;
     padding: 15px;
 }
-
+*/
 
 
 /*..........CSS EN GALERIA.........*/
 
-.grid-galeria {
+/*.grid-galeria {
     width: 96%;
     margin: 35px;
     margin-left: 20px;
@@ -308,7 +308,7 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
 
 /*.............CSS EN ELABORACION.........*/
 
-.guia-elaboración{
+/*.guia-elaboración{
     text-align: center;
 }
 
@@ -351,7 +351,7 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
     border: #900F0F solid 2px;
     border-radius: 5px;
     margin-bottom: 15px;
-}
+}*/
 
 /*-------------------FOOTER--------------------*/
 
@@ -388,7 +388,7 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
     padding: 5px;
 }*/
 
-.tienda h2{
+/*.tienda h2{
     text-align: center;
     font-size: 40px;
     font-family: 'Nunito', sans-serif;
