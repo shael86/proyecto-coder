@@ -3,6 +3,13 @@
 .navbar{
     background-color: #900F0F;
     .container-fluid{
+        .navbar-toggler{
+            color: white;
+            background-color: white;
+            .navbar-toggler-icon{
+            background-color: white;
+            }
+        }
         .nav-link.active{
             color: white;
             font-size: 23px;
