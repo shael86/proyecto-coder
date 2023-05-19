@@ -1,35 +1,5 @@
 /*-------scss en media querys-------*/
 
-@media screen and (max-width:550px) {
-    .grid-container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat (12, 30s0px);
-        .grid-galeria{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 15px 25px 0px 10px;
-            .item12{
-                margin-bottom: 25px;
-                }
-            }
-    }
-
-
-    .pie-de-pagina{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        }
-
-    .fixed{
-        right: 15px;
-        bottom: 150px;
-        }
-    }
-
 @media screen and (max-width:980px){
     .imagen{
         display: flex;
@@ -69,8 +39,8 @@
     h2{
         text-align: center;
         font-size: 35px;
-        color: black;
-        background-color: #900F0F;
+        color: $color-terciario;
+        background-color: $color-primario;
     }
     p{
         text-align: center;
@@ -92,7 +62,65 @@
         margin: 10px 20px 10px 20px;
         }
     }
+
+.unir{
+        display: flex;
+        flex-direction: column;
+    }
 }
+
+@media screen and (max-width:550px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (12, 30s0px);
+        .grid-galeria{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 25px 0px 10px;
+            .item12{
+                margin-bottom: 25px;
+                }
+            }
+    }
+
+    .contacto{
+        .titulo{
+            img{
+                width: 350px;
+                height: 200px;
+            }
+        }
+    }
+
+    .unir{
+        .ubicacion{
+            width: 340px;
+            height: 500px;
+            div{
+                iframe{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+
+    .pie-de-pagina{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+
+    .fixed{
+        right: 15px;
+        bottom: 150px;
+        }
+    }
+
+
 @media screen and (max-width:430px){
     .hero{
         text-align: center;

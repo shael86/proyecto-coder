@@ -1,0 +1,67 @@
+/*----paletas de colores-----*/
+
+$color-primario: #900F0F;
+$color-secundario: white;
+$color-terciario: black;
+
+/*-------Listas-------*/
+
+$colores:
+red,
+blue,
+yellow,
+pink,
+rgba(138, 64, 64, 0.89);
+
+$font-size:
+10px,
+15px,
+25px,
+30px,
+35px,
+50px;
+
+/*-------Operaciones--------*/
+
+$ancho: 1000px;
+$alto: 900px;
+
+/*----------Mapas----------*/
+/*--Key(nombre referencial,value(valor esa propiedad)---*/
+
+
+
+/*------Extends-- (% = PlaceHolders) ---*/
+
+%flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*-----Mixins-----*/
+
+@mixin flex($flex, $justify, $aling){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+
+/*------Condicional--------*/
+/*---OPERADORE DE COMPARACION---*/
+/*   = (es asignacion)   */
+/*  == (son igules)      */
+/*  != (es diferente)    */
+/*   > ( mayor que)      */
+/*   < ( menor que)      */
+/*   >= ( mayor o igual)  */
+/*   <= ( menor o igual)  */
+
+/*----Bucles------*/
+
+@for $i from 1 through 6{
+    
+}

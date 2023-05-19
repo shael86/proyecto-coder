@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #900F0F;
+    background-color: $color-primario;
     flex-wrap: wrap;
     ul{
         margin: 5px;
@@ -12,12 +12,12 @@
             a{
                 font-family: 'Nunito', sans-serif ;
                 font-size: 18px;
-                color: white;
+                color: $color-secundario;
             }
         }
     }
     p{
-        color: white;
+        color: $color-secundario;
         font-size: 18px;
         margin: 15px;
         text-align: center;

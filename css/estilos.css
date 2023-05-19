@@ -11,6 +11,29 @@ ul {
 a {
   text-decoration: none; }
 
+/*----paletas de colores-----*/
+/*-------Listas-------*/
+/*-------Operaciones--------*/
+/*----------Mapas----------*/
+/*--Key(nombre referencial,value(valor esa propiedad)---*/
+/*------Extends-- (% = PlaceHolders) ---*/
+.hero, .bienvenidos, .productos .productos-card h3, .contacto, .unir .contactanos .grilla {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/*-----Mixins-----*/
+/*------Condicional--------*/
+/*---OPERADORE DE COMPARACION---*/
+/*   = (es asignacion)   */
+/*  == (son igules)      */
+/*  != (es diferente)    */
+/*   > ( mayor que)      */
+/*   < ( menor que)      */
+/*   >= ( mayor o igual)  */
+/*   <= ( menor o igual)  */
+/*----Bucles------*/
 /*------ scss en header------*/
 .navbar {
   background-color: #900F0F; }
@@ -36,11 +59,7 @@ a {
   height: 500px;
   background-position: center;
   font-style: italic;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  background-attachment: fixed; }
   .hero h2 {
     margin: 25px;
     padding: 10px;
@@ -57,17 +76,13 @@ a {
     background-color: black;
     padding: 10px; }
 
-.bienvenidos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .bienvenidos h2 {
-    font-size: 50px;
-    font-family: 'Nunito', sans-serif; }
-  .bienvenidos p {
-    font-size: 25px;
-    margin: 25px; }
+.bienvenidos h2 {
+  font-size: 50px;
+  font-family: 'Nunito', sans-serif; }
+
+.bienvenidos p {
+  font-size: 25px;
+  margin: 25px; }
 
 .productos h2 {
   background-color: #900F0F;
@@ -82,30 +97,27 @@ a {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap; }
-  .productos .productos-contenedor .productos-card {
-    width: 270px;
-    height: 360px;
-    border: 1px black solid;
-    object-fit: cover;
-    -webkit-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
-    -moz-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
-    box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69); }
-    .productos .productos-contenedor .productos-card img {
-      width: 100%;
-      height: 250px; }
-    .productos .productos-contenedor .productos-card h3 {
-      margin: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column; }
-    .productos .productos-contenedor .productos-card a {
-      background-color: black;
-      color: beige;
-      padding: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
+
+.productos .productos-card {
+  width: 270px;
+  height: 360px;
+  border: 1px black solid;
+  object-fit: cover;
+  -webkit-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
+  box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69); }
+  .productos .productos-card img {
+    width: 100%;
+    height: 250px; }
+  .productos .productos-card h3 {
+    margin: 15px; }
+  .productos .productos-card a {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .imagen {
   display: flex;
@@ -158,7 +170,13 @@ a {
     border: #900F0F solid 2px;
     border-radius: 5px;
     margin-bottom: 15px;
-    margin-top: 15px; }
+    margin-top: 15px;
+    -webkit-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
+    -moz-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
+    box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
+    -webkit-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
+    -moz-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
+    box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69); }
   .guia-de-elaboración .enmarcado h3 {
     padding: 15px;
     font-size: 35px;
@@ -177,48 +195,53 @@ a {
     margin-bottom: 15px; }
 
 /*----- scss en contacto------*/
-.contacto {
+.contacto h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+  color: white;
+  background-color: #900F0F;
+  margin-top: 15px; }
+
+.contacto .titulo img {
+  width: 700px;
+  height: 400px;
+  border-radius: 5px;
+  border: black solid 2px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
+  box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69); }
+
+.contacto .titulo .horarios p {
+  text-align: center;
+  font-size: 30px; }
+
+.contacto .titulo .horarios .dias {
+  background-color: #900F0F;
+  color: white;
+  border: black solid 2px;
+  border-radius: 5px;
+  -webkit-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
+  box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69); }
+
+.unir {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  .contacto h1 {
-    width: 100%;
-    text-align: center;
-    font-size: 45px;
+  align-items: center;
+  margin-bottom: 20px; }
+  .unir .contactanos {
     color: white;
     background-color: #900F0F;
-    margin-top: 15px; }
-  .contacto .titulo img {
-    width: 700px;
-    height: 400px;
-    border-radius: 5px;
     border: black solid 2px;
-    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 15px;
     -webkit-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
     -moz-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
     box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69); }
-  .contacto .titulo .horarios p {
-    text-align: center;
-    font-size: 30px; }
-  .contacto .titulo .horarios .dias {
-    background-color: #900F0F;
-    color: white;
-    border: black solid 2px;
-    border-radius: 5px; }
-  .contacto .contactanos {
-    color: white;
-    background-color: #900F0F;
-    border: black solid 2px;
-    border-radius: 5px;
-    padding: 15px; }
-    .contacto .contactanos h2 {
+    .unir .contactanos h2 {
       text-align: center; }
-    .contacto .contactanos .grilla {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column; }
 
 .ubicacion {
   color: white;
@@ -227,7 +250,15 @@ a {
   padding: 25px;
   border: black solid 2px;
   border-radius: 5px;
-  width: 450px; }
+  width: 450px;
+  height: 507px;
+  -webkit-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
+  box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69); }
+  .ubicacion h3 {
+    color: white;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif; }
 
 /*-----scss en galeria------*/
 .grid-titulo {
@@ -236,7 +267,7 @@ a {
   .grid-titulo h2 {
     font-size: 40px; }
   .grid-titulo p {
-    font-size: 20px;
+    font-size: 25px;
     color: white;
     background-color: #900F0F; }
 
@@ -282,7 +313,9 @@ a {
   color: white; }
 
 .d-none {
-  background-color: #900F0F; }
+  background-color: #900F0F;
+  border: black solid 2px;
+  border-radius: 5px; }
 
 .carousel-inner .carousel-item .d-none {
   background-color: #900F0F; }
@@ -310,27 +343,6 @@ a {
     padding: 5px; }
 
 /*-------scss en media querys-------*/
-@media screen and (max-width: 550px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat 12, 30s0px; }
-    .grid-container .grid-galeria {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 15px 25px 0px 10px; }
-      .grid-container .grid-galeria .item12 {
-        margin-bottom: 25px; }
-  .pie-de-pagina {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  .fixed {
-    right: 15px;
-    bottom: 150px; } }
-
 @media screen and (max-width: 980px) {
   .imagen {
     display: flex;
@@ -373,7 +385,40 @@ a {
   .bienvenidos p {
     text-align: center;
     font-size: 20px;
-    margin: 10px 20px 10px 20px; } }
+    margin: 10px 20px 10px 20px; }
+  .unir {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 550px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 12, 30s0px; }
+    .grid-container .grid-galeria {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 25px 0px 10px; }
+      .grid-container .grid-galeria .item12 {
+        margin-bottom: 25px; }
+  .contacto .titulo img {
+    width: 350px;
+    height: 200px; }
+  .unir .ubicacion {
+    width: 340px;
+    height: 500px; }
+    .unir .ubicacion div iframe {
+      width: 300px;
+      height: 300px; }
+  .pie-de-pagina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .fixed {
+    right: 15px;
+    bottom: 150px; } }
 
 @media screen and (max-width: 430px) {
   .hero {
