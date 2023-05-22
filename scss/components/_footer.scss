@@ -2,8 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $color-primario;
+    background: rgb(144,15,15);
+    background: linear-gradient(180deg, rgba(144,15,15,1) 30%, rgba(0,0,0,1) 84%);
     flex-wrap: wrap;
+    transition: 2s;
     ul{
         margin: 5px;
         padding: 5px;
@@ -24,5 +26,15 @@
     }
     div{
         padding: 5px;
+        img:hover{
+            transform: scale(1.1);
+            -webkit-box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
+            -moz-box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
+            box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
+        }
+        .face{
+            background-color: white;
+            border-radius: 12px;
+        }
     }
 }

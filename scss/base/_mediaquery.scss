@@ -50,6 +50,7 @@
         }
     }
 
+
 .bienvenidos{
     h2{
         text-align: center;
@@ -66,6 +67,10 @@
 .unir{
         display: flex;
         flex-direction: column;
+    }
+
+    .navbar{
+    background: $color-primario;
     }
 }
 

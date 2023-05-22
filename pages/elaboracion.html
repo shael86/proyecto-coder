@@ -10,11 +10,11 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--<link rel="stylesheet" href="../css/style.css">-->
     <!--favicon-->
-    <link rel="stylesheet" href="../img/favicon-16x16.png">
+    <link rel="shortcut icon" href="../img/favicon-16x16.png" type="image/x-icon">
     <!--keywords 10 palabras minimos-->
-    <meta name="keywords" content="">
+    <meta name="keywords" content="cafeteria, cafe, cafe de especialidad, cafe con leche, Espresso, Capuccino, moka, prensa francesa, desayunos, almuerzos, meriendas, cafe irlandes, granos de cafe, arabica, brasil, colombia, kenia, molido, aroma, sabor">
     <!--description 70 a 320 caracteres 180 lo justo-->
-    <meta name="description" content="">
+    <meta name="description" content="Déjate envolver por el delicioso aroma y sabor de nuestro café de especialidaden Coffe@rabica vas encontrar el mejor cafe molido o en grano que jamas hayas probado">
     <!--protocolo open graph-->
     <meta property="og-type" content="web site">
     <meta property="og-title" content="Coffe@rabica">
@@ -22,14 +22,18 @@
     <meta property="og.imagen" content="url logo una vez saubida">
     <meta property="og.description" content="180 caracteres">
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>Cafe de especialidad</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Coffe@arabica | el mejor cafe de especialidad</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../img/logo-cafe.jpeg" alt=""></a>
+                <a class="navbar-brand" href="../index.html"><img class="animate__animated animate__heartBeat" src="../img/logo-cafe.jpeg" alt="logo-cafe"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -60,6 +64,7 @@
     </header>
 
     <main>
+        <section>
         <div class="guia-de-elaboración">
             <h1>Guia de elaboracion</h1>
             <div class="enmarcado">
@@ -185,7 +190,7 @@
                 <p>El clásico. Una de las mejores y más sencillas maneras de obtener el café en casa, con excelentes
                     resultados.</p>
             </div>
-                <h2 class="accordion-header" id="headingTwo">
+                <h2 class="accordion-item" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         v-60
@@ -209,7 +214,6 @@
                         ¡Quita la v-60 de la taza y disfruta de tu café!
                     </div>
                 </div>
-            </div>
             <div class="enmarcado">
                 <img src="../img/expreso.jpg" alt="Cafetera-espresso">
                 <h3>espresso</h3>
@@ -227,7 +231,7 @@
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <strong>Preparación</strong> It is hidden by default, until the
+                        <strong>Preparación</strong>
                         1. Retira el portafiltro de la cabeza de grupo de la máquina de café exprés y colócalo en una escala tarada.
 
 2. Purga la cabeza del grupo con agua para asegurarte de que esté completamente limpia y clara.
@@ -247,11 +251,11 @@
                 </div>
             </div>
         </div>
-
-        <div class="fixed">
-            <a href=""><img src="../img/whatsapp.png" alt="logo-whatsapp"></a>
-        </div>
-        </section>
+    </div>
+    </section>
+    <div class="fixed">
+        <a href=""><img src="../img/whatsapp.png" alt="logo-whatsapp"></a>
+    </div>
     </main>
     <footer class="pie-de-pagina">
         <ul>
@@ -262,7 +266,7 @@
         <p>© 2023, Coffe@rabica. Diseñado por Yael Gustavo Roldán.</p>
         <div>
             <img src="../img/instagram logo.png" alt="logo-instagram">
-            <img src="../img/facebook logo.png" alt="logo-facebook">
+            <img class="face" src="../img/facebook logo.png" alt="logo-facebook">
             <img src="../img/gorjeo.png" alt="logo-twitter">
         </div>
     </footer>

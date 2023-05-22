@@ -36,7 +36,8 @@ a {
 /*----Bucles------*/
 /*------ scss en header------*/
 .navbar {
-  background-color: #900F0F; }
+  background: #900f0f;
+  background: linear-gradient(133deg, #900f0f 30%, black 84%); }
   .navbar .container-fluid .navbar-toggler {
     color: white;
     background-color: white; }
@@ -49,17 +50,22 @@ a {
     margin-left: 15px;
     margin-right: 15px; }
   .navbar .container-fluid img {
+    border-radius: 50%;
     height: 200px;
     width: 200px; }
 
 /*------ scss en index-----*/
 .hero {
-  background-image: url(../img/cafe-mano.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.438)), url(../img/cafe-mano.jpg);
   width: 100%;
   height: 500px;
   background-position: center;
   font-style: italic;
   background-attachment: fixed; }
+  .hero h1 {
+    color: white;
+    font-size: 52px;
+    font-family: 'Nunito', sans-serif 700; }
   .hero h2 {
     margin: 25px;
     padding: 10px;
@@ -71,10 +77,13 @@ a {
     font-size: 35px;
     margin-bottom: 25px;
     color: white; }
-  .hero a {
+  .hero .boton {
+    transition: 2s;
     color: white;
     background-color: black;
     padding: 10px; }
+    .hero .boton:hover {
+      transform: scale(1.2); }
 
 .bienvenidos h2 {
   font-size: 50px;
@@ -280,7 +289,8 @@ a {
   grid-auto-rows: 200px;
   gap: 20px; }
   .grid-container .grid-galeria .grid-item:hover {
-    transform: scale(1.1); }
+    transform: scale(1.1);
+    transition: 1s ease-in-out; }
   .grid-container .grid-galeria .grid-item img {
     width: 100%;
     height: 100%;
@@ -304,7 +314,7 @@ a {
     grid-row: span 2; }
 
 /*------scss en tienda-----*/
-.tienda h2 {
+.tienda h1 {
   text-align: center;
   font-size: 40px;
   font-family: 'Nunito', sans-serif;
@@ -324,8 +334,10 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #900F0F;
-  flex-wrap: wrap; }
+  background: #900f0f;
+  background: linear-gradient(180deg, #900f0f 30%, black 84%);
+  flex-wrap: wrap;
+  transition: 2s; }
   .pie-de-pagina ul {
     margin: 5px;
     padding: 5px;
@@ -341,6 +353,14 @@ a {
     text-align: center; }
   .pie-de-pagina div {
     padding: 5px; }
+    .pie-de-pagina div img:hover {
+      transform: scale(1.1);
+      -webkit-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
+      -moz-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
+      box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69); }
+    .pie-de-pagina div .face {
+      background-color: white;
+      border-radius: 12px; }
 
 /*-------scss en media querys-------*/
 @media screen and (max-width: 980px) {
@@ -388,7 +408,9 @@ a {
     margin: 10px 20px 10px 20px; }
   .unir {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .navbar {
+    background: #900F0F; } }
 
 @media screen and (max-width: 550px) {
   .grid-container {

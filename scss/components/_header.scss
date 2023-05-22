@@ -1,7 +1,8 @@
 /*------ scss en header------*/
 
 .navbar{
-    background-color: $color-primario;
+    background: rgb(144,15,15);
+    background: linear-gradient(133deg, rgba(144,15,15,1) 30%, rgba(0,0,0,1) 84%);
     .container-fluid{
         .navbar-toggler{
             color: $color-secundario;
@@ -18,8 +19,9 @@
             margin-right: 15px;
         }
         img{
-        height: 200px;
-        width: 200px;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
         }
     }
 }
