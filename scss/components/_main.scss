@@ -335,6 +335,7 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
         color: $color-secundario
     }
 }
+
 .d-none{
     background-color: $color-primario;
     border: $color-terciario solid 2px;
@@ -343,10 +344,4 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
 
 
 
-.carousel-inner{
-    .carousel-item{
-        .d-none{
-            background-color: $color-primario;
-        }
-    }
-}
+
