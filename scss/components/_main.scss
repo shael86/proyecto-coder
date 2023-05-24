@@ -335,6 +335,18 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
         color: $color-secundario
     }
 }
+.carousel-contenedor{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url(../img/fondo-tienda.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .slide{
+        width: 50%;
+        height: 50%;
+    }
+}
 
 .d-none{
     background-color: $color-primario;

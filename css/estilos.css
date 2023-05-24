@@ -322,6 +322,17 @@ a {
   background-color: #900F0F;
   color: white; }
 
+.carousel-contenedor {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-image: url(../img/fondo-tienda.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .carousel-contenedor .slide {
+    width: 50%;
+    height: 50%; }
+
 .d-none {
   background-color: #900F0F;
   border: black solid 2px;
