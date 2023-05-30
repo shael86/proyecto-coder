@@ -89,7 +89,8 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
 .imagen{
     @include flex(flex, center, center);
     flex-direction: row;
-    margin: 40px;  
+    margin-top: 30px;
+    margin-bottom: 20px;
     width: 100%;
     height: 500px;
     position: relative;
@@ -113,8 +114,8 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
     }
     p{
         height: 300px;
-        margin: 40px;
-        padding: 25px;
+        width: 600px;
+        margin: 25px;
         font-size: nth($font-size, 4);
         text-align: center;
     }
@@ -234,11 +235,18 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
         h2{
             text-align: center;
         }
-        .grilla{
-            @extend %flex;
+        .form{
+            .grilla{
+                .label{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    }
+                }
             }
         }
     }
+
     .ubicacion{
         color: $color-secundario;
         background-color: $color-primario;
