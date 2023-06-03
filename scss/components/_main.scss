@@ -21,7 +21,8 @@
         border-radius: 5px;
     }
     p{   
-        font-size: nth($font-size, 5);
+        text-align: center;
+        font-size: nth($font-size, 4);
         margin-bottom: 25px;
         color: $color-secundario;
     }
@@ -37,13 +38,37 @@
 }
 .bienvenidos{
     @extend %flex;
-    h2{    
-        font-size: nth($font-size, 6);
+    h3{ 
+        text-align: center;   
+        color: $color-secundario;
+        font-size: nth($font-size, 5);
         font-family: 'Nunito', sans-serif;
+        background-color: $color-primario;
+        width: 100%;
+        margin-top: 10px;
     }
-    p{
-        font-size: nth($font-size, 3);
-        margin: 25px;
+    .orden{
+        display: flex;
+        p{
+        padding-top: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-top:40px;
+        text-align: center;
+        font-size: nth($font-size, 4);
+        margin: 15px;
+        }
+        img{
+        border: solid $color-primario 5px;
+        border-radius: 10px;
+        width: 400px;
+        height: 400px;
+        margin-top: 15px;
+        margin-right: 15px;
+        -webkit-box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
+-moz-box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
+box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
+        }
     }
 }
 .productos{
@@ -78,6 +103,9 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
                 @extend %flex;
             }
             a{
+                &:hover{
+                    background-color: $color-primario;
+                }
                 background-color: $color-terciario;
                 color: $color-secundario;
                 padding: 15px;

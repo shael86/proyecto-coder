@@ -35,8 +35,7 @@ a {
 /*   <= ( menor o igual)  */
 /*----Bucles------*/
 /*------ scss en header------*/
-.navbar {
-  background: #900f0f;
+.navbar .container-fluid {
   background: linear-gradient(133deg, #900f0f 30%, black 84%); }
   .navbar .container-fluid .navbar-toggler {
     color: white;
@@ -50,9 +49,9 @@ a {
     margin-left: 15px;
     margin-right: 15px; }
   .navbar .container-fluid img {
-    border-radius: 50%;
-    height: 200px;
-    width: 200px; }
+    border-radius: 10px;
+    height: 100px;
+    width: 100px; }
 
 /*------ scss en index-----*/
 .hero {
@@ -74,7 +73,8 @@ a {
     border: white solid 2px;
     border-radius: 5px; }
   .hero p {
-    font-size: 35px;
+    text-align: center;
+    font-size: 30px;
     margin-bottom: 25px;
     color: white; }
   .hero .boton {
@@ -85,13 +85,35 @@ a {
     .hero .boton:hover {
       transform: scale(1.2); }
 
-.bienvenidos h2 {
-  font-size: 50px;
-  font-family: 'Nunito', sans-serif; }
+.bienvenidos h3 {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  font-family: 'Nunito', sans-serif;
+  background-color: #900F0F;
+  width: 100%;
+  margin-top: 10px; }
 
-.bienvenidos p {
-  font-size: 25px;
-  margin: 25px; }
+.bienvenidos .orden {
+  display: flex; }
+  .bienvenidos .orden p {
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    margin: 15px; }
+  .bienvenidos .orden img {
+    border: solid #900F0F 5px;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    margin-top: 15px;
+    margin-right: 15px;
+    -webkit-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
+    -moz-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
+    box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69); }
 
 .productos h2 {
   background-color: #900F0F;
@@ -127,6 +149,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center; }
+    .productos .productos-card a:hover {
+      background-color: #900F0F; }
 
 .imagen {
   display: flex;
@@ -365,15 +389,22 @@ a {
     margin: 15px;
     text-align: center; }
   .pie-de-pagina div {
-    padding: 5px; }
-    .pie-de-pagina div img:hover {
-      transform: scale(1.1);
-      -webkit-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
-      -moz-box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69);
-      box-shadow: 17px 24px 12px -9px rgba(0, 0, 0, 0.69); }
-    .pie-de-pagina div .face {
-      background-color: white;
-      border-radius: 12px; }
+    margin: 5px; }
+    .pie-de-pagina div .bi-instagram {
+      margin: 5px;
+      color: white; }
+      .pie-de-pagina div .bi-instagram:hover {
+        transform: scale(1.2); }
+    .pie-de-pagina div .bi-facebook {
+      margin: 5px;
+      color: white; }
+      .pie-de-pagina div .bi-facebook:hover {
+        transform: scale(1.2); }
+    .pie-de-pagina div .bi-twitter {
+      margin: 5px;
+      color: white; }
+      .pie-de-pagina div .bi-twitter:hover {
+        transform: scale(1.2); }
 
 /*-------scss en media querys-------*/
 @media screen and (max-width: 980px) {
@@ -415,18 +446,25 @@ a {
     font-size: 28px;
     margin-left: 35px;
     margin-right: 35px; }
-  .bienvenidos h2 {
+  .bienvenidos h3 {
     text-align: center;
     font-size: 35px; }
+  .bienvenidos .orden {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .bienvenidos p {
     text-align: center;
     font-size: 20px;
-    margin: 10px 20px 10px 20px; }
-  .unir {
-    display: flex;
-    flex-direction: column; }
-  .navbar {
-    background: #900F0F; } }
+    margin: 10px 20px 10px 20px; } }
+
+.unir {
+  display: flex;
+  flex-direction: column; }
+
+.navbar {
+  background: #900F0F; }
 
 @media screen and (max-width: 550px) {
   .grid-container {

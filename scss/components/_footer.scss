@@ -25,16 +25,24 @@
         text-align: center;
     }
     div{
-        padding: 5px;
-        img:hover{
-            transform: scale(1.1);
-            -webkit-box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
-            -moz-box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
-            box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
+        margin: 5px;
+        .bi-instagram{
+            &:hover{
+                transform:scale(1.2);}
+            margin: 5px;
+            color: $color-secundario
         }
-        .face{
-            background-color: white;
-            border-radius: 12px;
+        .bi-facebook{
+            &:hover{
+                transform:scale(1.2);}
+            margin: 5px;
+            color: $color-secundario;
+        }
+        .bi-twitter{
+            &:hover{
+                transform:scale(1.2);}
+            margin: 5px;
+            color: $color-secundario;
         }
     }
 }
