@@ -49,6 +49,11 @@ $alto: 900px;
     align-items: $aling;
 }
 
+@mixin grid($grid, $row, $column){
+    display: $grid;
+    grid-template-rows: $row;
+    grid-template-columns: $column;
+}
 
 /*------Condicional--------*/
 /*---OPERADORE DE COMPARACION---*/

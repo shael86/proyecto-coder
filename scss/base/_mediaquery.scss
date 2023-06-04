@@ -85,6 +85,19 @@
 
 
 @media screen and (max-width:550px) {
+    .bienvenidos{
+        .orden{
+            p{
+                font-size: nth($font-size, 3);
+            }
+            img{
+                width: 340px;
+                height: 340px;
+                margin-left: 15px;
+            }
+        }
+    }
+
     .grid-container{
         display: grid;
         grid-template-columns: 1fr;
@@ -111,6 +124,9 @@
     }
 
     .unir{
+        .contactanos{
+            width: 340px;
+        }
         .ubicacion{
             width: 340px;
             height: 500px;

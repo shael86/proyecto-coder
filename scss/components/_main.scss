@@ -219,6 +219,7 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
         color: $color-secundario;
         background-color: $color-primario;
         margin-top: 15px;
+        font-family: 'Nunito', sans-serif;
     }
     .titulo{
         img{
@@ -248,10 +249,22 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
         }
     }
 }
+
+.divisor{
+    background-color: $color-primario;
+    text-align: center;
+    font-size: nth($font-size, 4);
+    font-family: 'Nunito', sans-serif;
+    color: $color-secundario;
+    margin-top: 0;
+}
+
 .unir{
+    background-image: url(../img/fondo-contacto.jpg);
     @include flex(flex, center, center);
-    margin-bottom: 20px;
+    flex-direction:column-reverse;
     .contactanos{
+        margin-top: 15px;
         color: $color-secundario;
         background-color: $color-primario;
         border: $color-terciario solid 2px;
@@ -273,18 +286,17 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
                 }
             }
         }
-    }
-
     .ubicacion{
-        color: $color-secundario;
-        background-color: $color-primario;
-        margin: 15px;
-        padding: 25px;
-        border:  $color-terciario solid 2px;
-        border-radius: 5px;
-        width: 450px;
-        height: 507px;
-        -webkit-box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
+            margin-bottom: 15px;
+            color: $color-secundario;
+            background-color: $color-primario;
+            margin: 15px;
+            padding: 25px;
+            border:  $color-terciario solid 2px;
+            border-radius: 5px;
+            width: 450px;
+            height: 507px;
+            -webkit-box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
             -moz-box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
             box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
         h3{
@@ -293,6 +305,8 @@ box-shadow: 17px 24px 12px -9px rgba(0,0,0,0.69);
             font-family: 'Nunito', sans-serif;
         }
     }
+}
+
 
 
 
